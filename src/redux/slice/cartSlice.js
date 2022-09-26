@@ -66,9 +66,9 @@ const cartSlice = createSlice({
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
     DELETE_CART_ITEMS: (state, action) => {
-      const itemIndex = state.cartItems.findIndex(
-        (item) => item.id === action.payload.id
-      );
+      // const itemIndex = state.cartItems.findIndex(
+      //   (item) => item.id === action.payload.id
+      // );
       const removeCart = state.cartItems.filter(
         (item) => item.id !== action.payload.id
       );
