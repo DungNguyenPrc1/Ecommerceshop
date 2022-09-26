@@ -32,7 +32,7 @@ const Login = () => {
         // ...
       })
       .catch((error) => {
-        toast.error(error.message);
+        toast.error("Login Failed");
         setLoading(false);
         // Handle Errors here.
       });
@@ -50,7 +50,7 @@ const Login = () => {
         // ...
       })
       .catch((error) => {
-        toast.error(error.message);
+        toast.error("Wrong Email or Password");
         setLoading(false);
       });
   };

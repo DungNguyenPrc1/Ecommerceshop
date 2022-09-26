@@ -159,7 +159,7 @@ const Header = () => {
           ) : (
             <></>
           )}
-          {isLoggedIn ? (
+          {
             <NavLink className={handleActiveLink} to="/cart">
               <Popover
                 title="Recently Added Products"
@@ -185,7 +185,7 @@ const Header = () => {
                 </span>
               </Popover>
             </NavLink>
-          ) : null}
+          }
 
           {isLoggedIn ? (
             <NavLink onClick={logoutUser} to="/">

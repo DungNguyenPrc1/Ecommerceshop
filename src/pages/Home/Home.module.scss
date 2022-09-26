@@ -23,6 +23,7 @@
     justify-content: space-between;
 }
 .dealshock {
+    width: 100%;
     background-color: #ff685f;
     height: 665.5px;
     margin-top: 16px;
@@ -58,6 +59,7 @@
     border-radius: 16px;
    
     & .list-item-buy{
+        
         display: grid;
         gap: 10px;
         grid-template-columns: 226px 226px 226px 226px 226px;
