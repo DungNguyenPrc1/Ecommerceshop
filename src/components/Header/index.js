@@ -2,7 +2,7 @@ import styles from "./Header.module.scss";
 import classNames from "classnames/bind";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { FaUserCircle } from "react-icons/fa";
+import { FaUserCircle, FaUser } from "react-icons/fa";
 import { Button, Popover } from "antd";
 
 import { auth } from "../../firebase/config";
@@ -194,6 +194,20 @@ const Header = () => {
           ) : (
             <></>
           )}
+        </div>
+        <div className={cx("menu-icon")}>
+          {isLoggedIn ? (
+            <Link to="/cart">
+              <AiOutlineShoppingCart />
+            </Link>
+          ) : (
+            <Link to="/login">
+              <AiOutlineShoppingCart />
+            </Link>
+          )}
+          <Link to="/login">
+            <FaUser style={{ marginLeft: "8px" }} />
+          </Link>
         </div>
       </div>
     </div>

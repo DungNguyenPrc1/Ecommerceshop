@@ -53,7 +53,7 @@ const Register = () => {
           </Typography.Paragraph>
         </Col>
         <Col span={24} className={cx("register1")}>
-          <Col span={6} className={cx("fillForm")}>
+          <Col span={12} className={cx("fillForm")}>
             <Form onFinish={handleData} onFinishFailed={handleDataFalse}>
               <Typography.Text strong>Email</Typography.Text>
               <Form.Item

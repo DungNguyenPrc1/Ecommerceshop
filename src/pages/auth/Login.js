@@ -65,7 +65,7 @@ const Login = () => {
           Login
         </Typography.Title>
       </Col>
-      <Col span={8} className={cx("form-login")}>
+      <Col span={12} className={cx("form-login")}>
         <Form
           className={cx("main")}
           onFinish={onFinish}
@@ -95,7 +95,7 @@ const Login = () => {
             label="Password"
             name="password"
             wrapperCol={{
-              offset: 0,
+              offset: 1,
               span: 20,
             }}
             rules={[

@@ -3,10 +3,11 @@
     background-color: #fff;
     display: flex;
     justify-content: center;
-    width: 285px;
+    max-width: 285px;
     height: 100px;
     padding: 15px 0;
     border-radius: 16px;
+    align-items: center;
     & .img {
         margin-left: 8px;
         display: flex;
@@ -16,8 +17,24 @@
 }
 
 
-.wrapper > * {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
+
+
+@media only screen and (max-width: 740px){
+    .wrapper {
+        display:flex;
+        flex-direction: column;
+        width: 241px;
+        &span {
+            font-size: 20px !important;
+        }
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+
+    }
+
+    
 }

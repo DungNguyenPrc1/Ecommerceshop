@@ -28,6 +28,9 @@
         font-size: 3rem;
     }
  }
+ .menu-icon{
+   display: none;
+ }
 
  .pages {
     display: flex;
@@ -119,4 +122,21 @@
    height: 60px;
    margin-top: 8px;
    justify-content: space-between;
+ }
+
+ @media only screen and (max-width: 740px){
+   .wrapperHeader {
+      padding: 0 16px
+   }
+   .pages {
+      display: none; 
+      
+   }
+   .right-header {
+     display: none
+   }
+   .menu-icon {
+      display: block;
+      color: #000
+   }
  }

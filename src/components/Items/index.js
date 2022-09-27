@@ -1,22 +1,46 @@
 import styles from "./Items.module.scss";
 import classNames from "classnames/bind";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 const cx = classNames.bind(styles);
 
 const Items = ({ listsItem }) => {
-  var settings = {
-    infinite: true,
+  const settings = {
+    // infinite: true,
+    // centerMode: true,
 
-    slidesToShow: 1,
+    slidesToShow: 5,
     slidesToScroll: 1,
-    slidesPerRow: 5,
+    // slidesPerRow: 5,
     autoplay: true,
     speed: 1000,
 
-    cssEase: "linear",
+    // cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1399,
+        settings: {
+          arrows: true,
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1195,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 950,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
   return (
     <>

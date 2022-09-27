@@ -50,14 +50,14 @@ const Home = () => {
         <img
           src={topzone}
           alt="1"
-          style={{ opacity: "0", marginBottom: "30px" }}
+          style={{ opacity: "0", marginBottom: "30px", width: "100%" }}
         />
-        <img src={topzone} alt="2" />
+        <img src={topzone} alt="2" style={{ width: "100%" }} />
         <div className={cx("dealshock")}>
           <img
             src="https://cdn.tgdd.vn/2022/09/banner/TAGLINE-HOTSALE-LDP-Desk-1200x100.png"
             alt="abc"
-            style={{ marginLeft: "-10px" }}
+            style={{ marginLeft: "-10px", width: "100%" }}
           />
           <div className={cx("list-tem")}>
             <Items listsItem={dataProducts} />
@@ -92,18 +92,12 @@ const Home = () => {
             >
               Technologies
             </div>
-            <ul
-              style={{
-                display: "grid",
-                padding: "15px 18px",
-                gridTemplateColumns: "1fr 1fr 1fr",
-                // justifyContent: "space-between",
-              }}
-            >
+            <ul className={cx("wrapper-technology-tag")}>
               <li className={cx("technology-tag")}>
                 <img
                   src="https://cdn.tgdd.vn/Files/2022/08/22/1458529/laptopgiamgiacucmanhthang8_800x450-200x200.jpg"
                   alt="#"
+                  className={cx("technology-tag-img")}
                 />
                 <span>
                   'Back to school' cùng những mẫu laptop giảm giá cực ngon chào
@@ -114,6 +108,7 @@ const Home = () => {
                 <img
                   src="https://cdn.tgdd.vn/Files/2022/08/08/1454004/anhbia1_800x450-200x200.jpg"
                   alt="#"
+                  className={cx("technology-tag-img")}
                 />
                 <span>
                   'Back to school' cùng những mẫu laptop giảm giá cực ngon chào
@@ -124,6 +119,7 @@ const Home = () => {
                 <img
                   src="https://cdn.tgdd.vn/Files/2022/09/02/1461580/vivo-x80-631_1280x720-200x200.jpg"
                   alt="#"
+                  className={cx("technology-tag-img")}
                 />
                 <span>
                   'Back to school' cùng những mẫu laptop giảm giá cực ngon chào

@@ -16,16 +16,26 @@ const SliderBanner = () => {
     slidesPerRow: 2,
     autoplay: true,
     speed: 1000,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+    ],
 
     cssEase: "linear",
   };
   return (
     <div>
       <Slider {...settings}>
-        <div>
+        <div style={{ marginRight: "8px" }}>
           <img src={slider1} alt="1" className={cx("sliderImage")} />
         </div>
-        <div>
+        <div style={{ marginRight: "8px" }}>
           <img src={slider2} alt="2" className={cx("sliderImage")} />
         </div>
         <div>

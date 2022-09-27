@@ -10,16 +10,11 @@ const TagPromo = ({ dataPromo }) => {
         return (
           <div className={cx("wrapper")} key={data.id}>
             <div className={cx("img")}>
-              <img
-                alt="1"
-                src={data.image}
-                // style={{ height: "70px", width: "65px" }}
-              />
+              <img alt="1" src={data.image} />
             </div>
 
             <span
               style={{
-                lineHeight: "70px",
                 fontSize: "22px",
                 marginLeft: "10px",
                 whiteSpace: "wrap",
